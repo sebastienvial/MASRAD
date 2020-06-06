@@ -1,0 +1,711 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/sebastien/ontologies/2020/4/ontologie"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/sebastien/ontologies/2020/4/ontologie">
+    <Prefix name="" IRI="http://www.semanticweb.org/sebastien/ontologies/2020/4/ontologie"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FST"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Order"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Service"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Is_Proposed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Need"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Request"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Serves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Belongs_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Ordered"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Travel_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Work_for"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#CreationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#IDCustomer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#IDPersonnel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#OrderNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#ProductNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/sebastien/ontologies/2020/4/PartsNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Criticity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA1234"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA5678"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA9876"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cpn01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cpn02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus1111"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus2222"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus3333"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#FST01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#FST02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#O2001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#O2002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#PCR0356"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0533"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0534"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Srv88"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Svr99"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Company"/>
+        <Class IRI="#Organisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FST"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Parts"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA1234"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parts"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA5678"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parts"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA9876"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cpn01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cpn02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus1111"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus2222"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus3333"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FST"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#FST01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FST"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#FST02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Order"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#O2001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Product"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#PCR0356"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Product"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0533"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Product"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0534"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Service"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Srv88"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Service"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Svr99"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Part_of"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA1234"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0533"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Part_of"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA1234"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0534"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Part_of"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA5678"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#O2002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Part_of"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA5678"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0533"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Part_of"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA5678"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0534"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Part_of"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA9876"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#O2001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Part_of"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA9876"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#PCR0356"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Part_of"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA9876"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0534"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Serves"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cpn01"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus1111"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Serves"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cpn02"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus2222"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Serves"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cpn02"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus3333"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Ordered"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus1111"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#O2001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Request"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus2222"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Srv88"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Ordered"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus2222"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#O2002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Travel_for"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#FST01"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cpn01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Travel_for"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#FST02"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cpn02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Need"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#O2002"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#FST02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Belongs_to"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#PCR0356"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus1111"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Belongs_to"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0533"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus3333"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Belongs_to"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0534"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus2222"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Is_Proposed"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Svr99"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus3333"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/sebastien/ontologies/2020/4/PartsNumber"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA1234"/>
+        <Literal>BSA1234</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Criticity"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA1234"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA1234"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/sebastien/ontologies/2020/4/PartsNumber"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA5678"/>
+        <Literal>BSA5678</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Criticity"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA5678"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA5678"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">30.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/sebastien/ontologies/2020/4/PartsNumber"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA9876"/>
+        <Literal>BSA9876</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Criticity"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA9876"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#BSA9876"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">50.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cpn01"/>
+        <Literal>Suisse</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cpn01"/>
+        <Literal>Bobst Mex</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cpn02"/>
+        <Literal>France</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cpn02"/>
+        <Literal>Bobst Lyon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#IDCustomer"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus1111"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1111</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus1111"/>
+        <Literal>Rieken AG</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#IDCustomer"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus2222"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2222</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus2222"/>
+        <Literal>Imprimeurs du futur</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#IDCustomer"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus3333"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3333</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Cus3333"/>
+        <Literal>GrosJean</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#IDPersonnel"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#FST01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">16625</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#FST01"/>
+        <Literal>Sylvain Blanc</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#IDPersonnel"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#FST02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18625</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#FST02"/>
+        <Literal>Alain Couturier</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#CreationDate"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#O2001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-01T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#OrderNumber"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#O2001"/>
+        <Literal>O2001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#CreationDate"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#O2002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-01T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#OrderNumber"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#O2002"/>
+        <Literal>O2002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#ProductNumber"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#PCR0356"/>
+        <Literal>PCR0356</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#PCR0356"/>
+        <Literal>VisonFoild</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#ProductNumber"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0533"/>
+        <Literal>Sp0533</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0533"/>
+        <Literal>Masterfoild 254</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#ProductNumber"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0534"/>
+        <Literal>SP0534</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#SP0534"/>
+        <Literal>SPrintera 106 PER</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Srv88"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">150.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Type"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Srv88"/>
+        <Literal>Dépannage</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Svr99"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">100.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Type"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Svr99"/>
+        <Literal>Maintenance</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Travel_for"/>
+        <ObjectProperty IRI="#Work_for"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Is_Proposed"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Need"/>
+        <Class IRI="#Order"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Request"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Serves"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Belongs_to"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Ordered"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Part_of"/>
+        <Class IRI="#Parts"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Travel_for"/>
+        <Class IRI="#FST"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Work_for"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Is_Proposed"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Need"/>
+        <Class IRI="#FST"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Request"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#Serves"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Belongs_to"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Ordered"/>
+        <Class IRI="#Order"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Part_of"/>
+        <Class IRI="#Order"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Part_of"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Travel_for"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Work_for"/>
+        <Class IRI="#Organisation"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#CreationDate"/>
+        <Class IRI="#Order"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#IDCustomer"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#IDPersonnel"/>
+        <Class IRI="#FST"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#OrderNumber"/>
+        <Class IRI="#Order"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#ProductNumber"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/sebastien/ontologies/2020/4/PartsNumber"/>
+        <Class IRI="#Parts"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Criticity"/>
+        <Class IRI="#Parts"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Description"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Location"/>
+        <Class IRI="#Company"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name"/>
+        <Class IRI="#Company"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name"/>
+        <Class IRI="#FST"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Price"/>
+        <Class IRI="#Parts"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Price"/>
+        <Class IRI="#Service"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Type"/>
+        <Class IRI="#Service"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#CreationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#IDCustomer"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#IDPersonnel"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#OrderNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#ProductNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/sebastien/ontologies/2020/4/PartsNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Criticity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Location"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Price"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

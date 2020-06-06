@@ -1,2 +1,2 @@
 # MASRAD
-Master of Rapid Developement
+Mini Projet - Web des données
